@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 700px;
+}
+
+.check-point {
+    margin-top: 20px;
+}
+
+.form-check {
+    margin: 16px 0;
+}
+
+.form-check-label {
+    font-size: 16px;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.form-check-input {
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+}
+
+.btn-outline-primary:focus {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.btnGroup-directional {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
