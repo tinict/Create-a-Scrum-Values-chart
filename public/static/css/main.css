@@ -12,8 +12,27 @@
     margin-top: 20px;
 }
 
+.form-control {
+    position: relative;
+    margin-top: 16px;
+    padding: 16px;    
+}
+
 .form-check {
     margin: 16px 0;
+}
+
+.bg-CreateChart {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #e3e3e39b;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .form-check-label {
@@ -36,5 +55,51 @@
 .btnGroup-directional {
     margin-top: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between !important;
+}
+
+.container-fluid {
+    padding: 0 !important;
+    display: flex;
+    justify-content: space-between !important;
+}
+
+.nav-header .navbar-brand {
+    color: #ffffff;
+}
+
+.nav-header .navbar-brand img {
+    width: 120px;
+}
+
+.navbar-right {
+    width: 120px;
+    text-decoration: none !important;
+}
+
+.nav-header {
+    flex-direction: column;
+    align-items: start;
+}
+
+.nav-header .sub-nav {
+    display: none;
+    list-style-type: none;
+}
+
+.nav-header .sub-nav .sub-nav-item{
+    text-decoration: none;
+}
+
+.none {
+    display: none;
+}
+
+.display {
+    display: block !important;
+}
+
+.btn-createChart {
+    width: 180px;
+    height: 44px;
 }
