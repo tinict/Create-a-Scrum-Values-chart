@@ -2,26 +2,6 @@
 
 export const Config = (Answers) => {
     return {
-        ButtonGroup: {
-            className: "form-check",
-            tagName: "div",
-            subClass: {
-                className: "form-check-input",
-                tagName: "div",
-                'form-check-input': {
-                    className: "form-check-input",
-                    type: "checkbox",
-                    value: "",
-                    id: "check_01",
-                    tagName: "input",
-                },
-                'form-check-label': {
-                    className: "form-check-input",
-                    for: "check_01",
-                    tagName: "label",
-                }
-            }
-        },
         Config_Chart_js: {
             type: 'radar',
             data: {
@@ -95,5 +75,3 @@ export const Config = (Answers) => {
         },
     };
 };
-
-console.log(Config().ButtonGroup);

@@ -1,0 +1,21 @@
+@media (max-width: 768px) {
+    .container {
+        width: 100% !important;
+    }
+    .nav-header {
+        padding: 0 !important;
+    }
+    .container {
+        padding: 0 !important;
+    }
+    .navbar-left {
+        margin: 0 8px !important;
+    }
+    .navbar-right {
+        width: 105px !important;
+        margin-right: 8px !important;
+    }
+    .sub-nav {
+        padding: 0 16px !important;
+    }
+}

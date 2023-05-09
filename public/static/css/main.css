@@ -2,10 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    user-select: none;
 }
 
-.container {
-    width: 700px;
+.container-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    width: 720px !important;
 }
 
 .check-point {
@@ -58,6 +64,11 @@
     justify-content: space-between !important;
 }
 
+.active {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
 .container-fluid {
     padding: 0 !important;
     display: flex;
@@ -72,14 +83,22 @@
     width: 120px;
 }
 
+.container-fluid .navbar-right span {
+    margin-right: 8px;
+}
+
 .navbar-right {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
     width: 120px;
     text-decoration: none !important;
 }
 
 .nav-header {
-    flex-direction: column;
-    align-items: start;
+    flex-direction: column !important;
+    align-items: start !important;
 }
 
 .nav-header .sub-nav {
@@ -102,4 +121,96 @@
 .btn-createChart {
     width: 180px;
     height: 44px;
+}
+
+.btnGroup-directional .fas {
+    font-size: 14px;
+}
+
+.sub-nav {
+    width: 100%;
+}
+
+.sub-nav li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 44px;
+    border-bottom: solid 1px #ccc;
+    width: 100%;
+}
+
+.sub-nav .title {
+    margin-left: 8px;
+}
+
+.Category {
+    display: flex;
+    height: 40px;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: solid 1px #ccc;
+    padding: 0 16px;
+}
+
+.Category li {
+    height: 40px;
+    padding: 0 4px;
+    list-style-type: none;
+    margin-right: 12px;
+}
+
+.Category li:hover {
+    border-bottom: solid 3px rgb(255, 150, 125);
+}
+
+.Category li:focus {
+    border-bottom: solid 3px rgb(255, 150, 125);
+}
+
+.active-category {
+    border-bottom: solid 3px rgb(255, 150, 125);
+}
+
+
+.Category li a {
+    text-decoration: none;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Category li a .title {
+    margin-left: 4px;
+}
+
+.Category .item-header-content {
+    margin-right: 4px;
+}
+
+
+.overview-content .title {
+    padding-left: 16px;
+    font-size: 26px;
+}
+
+.overview-pragraph {
+    padding: 0 16px;
+}
+
+.header-spider .title-chart {
+    font-size: 24px;
+}
+
+.header-spider {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 14px 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-spider a {
+    cursor: pointer;
 }

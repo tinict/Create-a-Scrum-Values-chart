@@ -1,3 +1,5 @@
+'usse strict';
+
 const firebaseConfig = {
   apiKey: "AIzaSyDGZSOLNXV_ew-C-l-0oTC0HZJexKxCAr8",
   authDomain: "scrum-spider-chart.firebaseapp.com",
@@ -17,14 +19,34 @@ else {
 }
 
 var database = firebase.database();
+export let StoreQuestion = [];
+export let StoreValue = [];
 
 const dbRef = database.ref();
 dbRef.child('ScrumValues').get().then((snapshot) => {
   if (snapshot.exists()) {
+    // let StoreQuestion = [];
     console.log(snapshot.val());
-  } else {
+    let newValues = Object.values(snapshot.val())
+    for (let i = 0; i < 5; i++)
+      StoreValue.push(Object.values(snapshot.val())[i]);
+      console.log(newValues);
+    for (let i = 0; i < newValues.length; i++) {
+      let Temp = [];
+      console.log(Object.values(newValues[i].Questions));
+      for (let j = 0; j < 5; j++) {
+        let newQuestions = (Object.values(newValues[i].Questions))[j].Content;
+        console.log(newQuestions);
+        Temp.push(newQuestions);
+      }
+      StoreQuestion.push(Temp);
+    }
+    console.log(StoreQuestion);
+  } 
+  else {
     console.log("No data available");
   }
 }).catch((error) => {
   console.error(error);
 });
+
